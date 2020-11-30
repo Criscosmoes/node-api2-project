@@ -39,6 +39,7 @@ function remove(id) {
     .del();
 }
 
+
 function findPostComments(postId) {
   return db('comments')
     .join('posts', 'posts.id', 'post_id')
